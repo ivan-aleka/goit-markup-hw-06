@@ -426,8 +426,7 @@ button {
 
 /**********Opening Skills */
 .skills {
-    padding: 96px 16px;
-    max-width: 320px;
+    padding: 96px 0px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -469,7 +468,6 @@ button {
 }
 @media screen and (min-width: 768px) {
 .skills {
-    max-width: 768px;
 }
 .skills-list {
     flex-wrap: wrap;
@@ -487,7 +485,6 @@ button {
 @media screen and (min-width: 1158px) {
 .skills {
     padding: 120px 0;
-    max-width: 1158px;
 }
 .skills-list {
     justify-content: space-between;
@@ -520,11 +517,13 @@ button {
 
 /**********Opening Our-Team */
 .our-team {
+    display: flex;
     background: #f4f4fd;
-    padding: 96px 12px;
-    max-width: 320px;
+    padding: 96px 0;
     margin-left: auto;
     margin-right: auto;
+    align-items: center;
+    justify-content: center;
 }
 
 .our-team-main-title {
@@ -540,12 +539,15 @@ button {
 }
 
 .our-team-list {
+    width: 264px;
     display: flex;
     flex-direction: column;
     gap: 72px;
+    align-items: center;
 }
 
 .our-team-item {
+    width: 100%;
     background: #fff;
     display: flex;
     align-items: center;
@@ -618,16 +620,12 @@ button {
     fill: #f4f4fd;
 }
 @media screen and (min-width: 768px) {
-.our-team {
-    max-width: 768px;
-    padding-left: 92px;
-    padding-right: 92px;
-}
 .our-team-list {
     flex-wrap: wrap;
     flex-direction: row;
     row-gap: 64px;
     column-gap: 24px;
+    width: 552px;
     }
 .our-team-item {
     width: calc((100% - 24px) / 2);
@@ -637,14 +635,12 @@ button {
 .our-team {
     padding-top: 120px;
     padding-bottom: 120px;
-    padding-left: 0px;
-    padding-right: 0px;
-    max-width: 1158px;
 }
 
 .our-team-list {
     justify-content: space-between;
     gap: 24px;
+    width: 1128px;
 }
 
 .our-team-item {
@@ -657,7 +653,6 @@ button {
 
 .our-portfolio {
     padding: 96px 0;
-    max-width: 320px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -737,9 +732,6 @@ button {
     color: #434455;
 }
 @media screen and (min-width: 768px) {
-.our-portfolio {
-    max-width: 768px;
-}
 .our-portfolio-list {
     flex-direction: row;
     flex-wrap: wrap;
@@ -755,7 +747,7 @@ button {
 }
 @media screen and (min-width: 1158px) {
 .our-portfolio {
-    max-width: 1158px;
+    /* max-width: 1158px; */
     padding-top: 120px;
     padding-bottom: 120px;
 }
@@ -821,7 +813,7 @@ button {
     justify-content: center;
     align-items: center;
     gap: 72px;
-    max-width: 320px;
+    /* max-width: 320px; */
 }
 .footer-container-social {
     width: 208px;
@@ -941,11 +933,15 @@ button {
 }
 @media screen and (min-width: 768px) {
 .footer .container {
-    gap: 72px 24px;
+    column-gap: 24px;
+    row-gap: 72px;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 552px;
+    /* gap: 72px 24px;
     align-items: flex-start;
-    max-width: 768px;
     padding-left: 108px;
-    padding-right: 164px;
+    padding-right: 108px; */
 }
 .footer-logo {
     text-align: left;
