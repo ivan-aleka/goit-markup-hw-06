@@ -53,15 +53,15 @@
             </li>
           </ul>
         </address>
-        <button class="burger-btn" type="button">
+        <button class="burger-btn" type="button" data-menu-open>
           <svg class="burger-icon" width="24" height="24">
             <use href="./images/icons.svg#icon-burger"></use>
           </svg>
         </button>
       </div>
-      <div class="mobile-menu">
+      <div class="mobile-menu" data-menu>
         <div class="container mobile-menu-container">
-          <button class="mobile-menu-close" type="button">
+          <button class="mobile-menu-close" type="button" data-menu-close>
             <svg class="mobile-menu-close-svg" width="8" height="8">
               <use href="./images/icons.svg#icon-close-black"></use>
             </svg>
@@ -136,7 +136,7 @@
             Effective Solutions<br />
             for Your Business
           </h1>
-          <button class="order-service-button" type="button">
+          <button class="order-service-button" type="button" data-modal-open>
             Order Service
           </button>
         </div>
@@ -705,9 +705,9 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop">
+    <div class="backdrop" data-modal>
       <div class="modal">
-        <button class="modal-button-close" type="button">
+        <button class="modal-button-close" type="button" data-modal-close>
           <svg class="modal-button-close-svg" width="8" height="8">
             <use href="./images/icons.svg#icon-close-black"></use>
           </svg>
@@ -788,5 +788,7 @@
         </form>
       </div>
     </div>
+    <script src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
